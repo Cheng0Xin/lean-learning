@@ -20,3 +20,7 @@ def F (α : Type u) : Type u := α × α
 
 -- TODO From here:
 -- https://lean-lang.org/theorem_proving_in_lean4/dependent_type_theory.html
+
+def f (n : Nat) := toString n
+
+#check (λ f g => f ∘ g) f
